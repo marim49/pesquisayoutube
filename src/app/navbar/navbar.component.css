@@ -1,11 +1,13 @@
 .bemvindo{
     font-size: 35px;
     text-align: justify;
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navbar {
     padding: 30px 10px;
-    color: #fff;
+    color: #ddd;
     background-color: #E62117;
     min-height: 40px;
     margin: 0px;
@@ -17,11 +19,14 @@
       display: inline-block;
       margin-bottom: 0;
       vertical-align: middle;
+      
     }
     .form-inline .form-control {
       display: inline-block;
-      width: 300px;
+      width: 350px;
       vertical-align: middle;
+  
+      
     }
     .form-inline .input-group {
       display: inline-table;
@@ -61,16 +66,15 @@
   }
 
   .form-control {
+  float: left;
     display: block;
     width: 300px;
     height: 34px;
-    
+    padding: 6px 12px;
     font-size: 14px;
-    
-    color: #555;
-    background-color: #fff;
+    background-color: #ddd;
     background-image: none;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(10, 10, 10);
     border-radius: 4px;
   }
   
@@ -95,17 +99,16 @@
   }
   
   .btn-danger {
-    color: #fff;
+    color: #ddd;
     background-color: rgb(126, 8, 8);
     text-transform: uppercase;
-    border: 3px;
+    border: 1px solid black;
     border-bottom-color: black;
-    border-radius: 4px;
-    
+    border-radius: 4px;  
   }
 
 .right-div {
-    float: right; 
+    float: right;
     padding: 20px;
 }
 
