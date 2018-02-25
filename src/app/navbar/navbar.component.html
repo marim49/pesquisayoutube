@@ -3,10 +3,10 @@
       <div class= "bemvindo">
         Busque vídeos no YouTube!!
       </div>
-        <form class="form-inline">
-          <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+        <form name="form" class="form-inline" >
+          <input name = "pesquisar " ng-model = "pesquisa" class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <button class="btn btn-danger" type="submit" onclick="pesquisar()">Pesquisar</button>
+          <button class="btn btn-danger"(click)="pesquisar()" >Pesquisar</button>
         </form>
     </div>
 </nav>
