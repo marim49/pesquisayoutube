@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { HttpModule, Http } from '@angular/http';
+import { DomSanitizer} from '@angular/platform-browser';
  
+
+
 
 
 @Component({
@@ -10,18 +13,23 @@ import { HttpModule, Http } from '@angular/http';
 })
 export class AppComponent {
 
+
+
   pesquisa: string;
   lista_videos: any = new Array <any> ();
   url = "https://www.googleapis.com/youtube/v3/";
   API_KEY = "AIzaSyDL_9RACZ1ob7ocA4C-EDOf-kareRz9eBE";
   youtube = "http://www.youtube.com/embed/";
+  
+
 pesquisar(){
   return this.busca.get(this.url+"search?q="+this.pesquisa+"&key="+this.API_KEY+ "&part=snippet")
   .toPromise()
   .then(resposta=>{
-    this.lista_videos = resposta.json().items;
-    
-  })
+    this.lista_videos = resposta.json().items; 
+     
+   })
+
   
   
           }
@@ -31,7 +39,8 @@ teste (){
   
 }
 
-constructor(public busca: Http){
+constructor(public busca: Http, private dom: DomSanitizer){
+  
  this.teste();
   
 
