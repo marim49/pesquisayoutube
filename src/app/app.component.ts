@@ -10,7 +10,7 @@ import { HttpModule, Http } from '@angular/http';
 })
 export class AppComponent {
 
-  pesquisa: string;
+  pesquisa: string = "inutilismo";
   lista_videos: any = new Array <any> ();
   url = "https://www.googleapis.com/youtube/v3/";
   API_KEY = "AIzaSyDL_9RACZ1ob7ocA4C-EDOf-kareRz9eBE";

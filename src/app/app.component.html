@@ -15,7 +15,15 @@
 
 <body>
 <div>
-        <mat-card>Simple card</mat-card> 
+   
+   <mat-card class="listar-videos" *ngFor = "let video of lista_videos">
+       <mat-card-header>
+           <mat-card-title>
+                {{lista_videos.title}}
+           </mat-card-title>
+       </mat-card-header>
+
+   </mat-card> 
 </div>
 </body>
 
