@@ -18,11 +18,16 @@
    
    <mat-card class="listar-videos" *ngFor = "let video of lista_videos">
        <mat-card-header>
+           <div mat-card-avatar class="avatar"><img
+            src="{{video.snippet.thumbnails.default.url}}" /></div>
            <mat-card-title>
-                {{lista_videos.title}}
+                {{video.snippet.title}}
            </mat-card-title>
+           <mat-card-subtitle> {{video.snippet.channelTitle}} </mat-card-subtitle>
        </mat-card-header>
-
+       <mat-card-content>
+            {{youtube + video.id.videoId}}
+       </mat-card-content>
    </mat-card> 
 </div>
 </body>

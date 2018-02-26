@@ -146,3 +146,13 @@
       width: 1170px;
     }
   }
+
+  .listar-videos{
+    max-width: 400px;
+  }
+
+  .avatar{
+    
+    background-size: cover;
+
+  }
