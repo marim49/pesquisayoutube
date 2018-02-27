@@ -26,7 +26,9 @@
            <mat-card-subtitle> {{video.snippet.channelTitle}} </mat-card-subtitle>
        </mat-card-header>
        <mat-card-content>
-        {{youtube}}{{video.id.videoId}}
+         
+        <iframe [src]="videourl"></iframe>
+        {{videourl}}
        </mat-card-content>
    </mat-card> 
 </div>

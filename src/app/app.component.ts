@@ -19,8 +19,9 @@ export class AppComponent {
   lista_videos: any = new Array <any> ();
   url = "https://www.googleapis.com/youtube/v3/";
   API_KEY = "AIzaSyDL_9RACZ1ob7ocA4C-EDOf-kareRz9eBE";
-  youtube = 'http://www.youtube.com/embed/';
+  youtube = 'https://www.youtube.com/embed/';
   videourl: any;
+  id: String = "4mcb1DM3eGk";
   
 
 
@@ -29,8 +30,8 @@ pesquisar(){
   .toPromise()
   .then(resposta=>{
     this.lista_videos = resposta.json().items; 
-    /* this.videourl = this.dom.bypassSecurityTrustResourceUrl(this.youtube +  this.lista_videos.id.videoId);
-    */
+   
+    
 
      
    })
@@ -48,7 +49,8 @@ teste (){
 constructor(public busca: Http,private dom: DomSanitizer){
   
  this.teste();
-
+ 
+ this.videourl = this.dom.bypassSecurityTrustResourceUrl(this.youtube +  this.id);
 
 }
 
