@@ -36,7 +36,7 @@ pesquisar(){
     this.lista_videos = res;
     /* lista_videos.id.videoId */
     /* this.videourl = this.dom.bypassSecurityTrustResourceUrl(this.youtube.concat(this.lista_videos.id.videoId)); */
-   console.log(this.lista_videos[0].linkSeguro);
+   
   })
           }
  
